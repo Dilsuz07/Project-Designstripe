@@ -1,0 +1,152 @@
+/* Start Section-6 styling */
+@mixin color{
+    color: rgb(49, 3, 49);
+}
+@mixin font {
+    font-family:'Poppins', sans-serif;
+}
+@mixin bacground {
+    background-color: #f5dcef;
+}
+
+@mixin button {
+    outline: none;
+    background-color: #35ded8;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    transition: .5s ease all;
+    font-weight: 600;
+
+    &:hover{
+        background-color: #e2d3e8;
+        color: #000;
+        box-shadow: 2px 6px 15px #b158d1;
+    }
+
+}
+.section-7{
+
+   img{
+       width: 100%;
+   }
+   .word{
+    @include color();
+    margin-top: -15rem;
+    height: 17rem;
+
+    @media screen and (max-width:992px) {
+        text-align: center;
+        margin-top: 0;
+    }
+    .word-1{
+          margin-left: 5rem;
+          h1{
+              @media screen and (max-width:768px) {
+                  font-size: 24px;
+              }
+          }
+          @media screen and (max-width:768px) {
+              text-align: center;
+              margin-top: 2rem;
+          }
+        }
+    .word-2{
+        .all{
+          text-align: center;
+        }
+        input{
+            width: 300px;
+            padding-left: 25px;
+            height: 48px;
+            border-radius: 30px;
+            margin: .5rem;
+            border: none;
+            outline: none;
+            @media screen and (max-width:992px) {
+                border: 1px solid #b158d1;
+                width: 240px;
+                height: 40px;
+                font-size: 13px;
+            }
+        }
+        .btn-7{
+            button{
+                margin-top: 1rem;
+                width:8rem;
+                height: 3rem;
+                @include button();
+                @include color();
+                margin-left: -11rem;
+            
+            @media screen and (max-width:992px) {
+                margin-left: 0;
+                width: 7rem;
+                height: 2.5rem;
+                font-size: 12px;
+            }
+        }
+        }
+    }
+}
+}
+/* Start Section-6 styling */
+
+/* Start Footer styling */
+
+.footer{
+    border-top: 2px solid #e8cef1;
+    height: 22rem;
+    margin-top: 2rem;
+    @media screen and (max-width:992px){
+        margin-top: 4rem;
+    }
+
+    ul{
+        margin-top: 5rem;
+
+        .list-1{
+            margin-bottom: 1rem;
+        }
+        @media screen and (max-width:992px){
+            margin-top: 0;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            a{
+               @include color();
+               text-decoration: none;
+           }
+        }
+    }
+    .foot-word{
+        @include color();
+        font-weight: 600;
+        p{
+            padding-left: 5px;
+        }
+        @media screen and (max-width:992px) {
+            justify-content: center;
+        }
+    }
+    
+    .icon{
+        i{
+            font-size: 28px;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        height: 80%;
+        display: flex;
+        align-items: flex-end;
+        @media screen and (max-width:992px) {
+            margin-top: 2rem;
+            height: 20%;
+            float: none;
+            justify-content: center;
+        }
+    }
+}
+
+/* End Footer styling */

@@ -1,0 +1,183 @@
+/* Start Section-5 styling */
+@mixin color{
+    color: rgb(49, 3, 49);
+}
+@mixin font {
+    font-family:'Poppins', sans-serif;
+}
+@mixin bacground {
+    background-color: #f5dcef;
+}
+
+@mixin button {
+    outline: none;
+    background-color: #35ded8;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    transition: .5s ease all;
+    font-weight: 600;
+
+    &:hover{
+        background-color: #e2d3e8;
+        color: #000;
+        box-shadow: 2px 6px 15px #b158d1;
+    }
+
+}
+
+.section-5{
+    .blog-img{
+        margin-top: 8rem;
+        margin-left: 4rem;
+        @media screen and (max-width:992px) {
+            text-align: center;
+            margin: 1rem;
+            img{
+                width: 70%;
+            }
+        }
+    }
+    
+    .absolute{
+        position: absolute;
+        animation: imageAll 4s linear infinite alternate 1s;
+    }
+    .absolute-1{
+        position: absolute;
+        animation: imageAll 4s linear infinite alternate-reverse 1s;
+    }
+    
+    .blok-img-2{
+        margin-top: 14rem;
+        img{
+            width: 95%;
+        }
+        @media screen and (max-width:992px) {
+           display: none;
+        }
+    }
+
+    .header-5{
+        margin-top: 10rem;
+        @include color();
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 3.5rem;
+        letter-spacing: 2px;
+
+        @media screen and (max-width:992px) {
+            margin-top: 15rem;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 2.7rem;
+            letter-spacing: 0;
+         }
+    }
+
+    .button-5{
+        button{
+            width: 16rem;
+            height: 3rem;
+            @include button();
+        
+        @media screen and (max-width:992px) {
+            width: 12rem;
+            height: 2.5rem;
+            font-size: 12px;
+        }
+      }
+    }
+    .para-5{
+        @include color();
+        font-weight: 500;
+    }
+    .blok-img-3{
+        margin-top: -22rem;
+        margin-left: 53rem;
+        @media screen and (max-width:1115px){
+            display: none;
+        }
+    }
+
+    .blok-img-4{
+        margin-left: 50rem;
+        margin-top: -6rem;
+        @media screen and (max-width:1115px){
+            display: none;
+        }
+        @media screen and (max-width:992px) {
+            margin: 0;
+            margin-top: 15rem;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 90%;
+            }
+            
+        }
+    }
+    .blok-img-5{
+        margin-top: -6rem;
+        @media screen and (max-width:992px) {
+            margin: 0;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes imageAll{
+    0%{margin-top:0;margin-left: 0;}
+    25%{margin-left: 1rem;margin-top: 0;}
+    50%{margin-left: 1rem;margin-top: 1rem;}
+    75%{margin-left:0;margin-top: 1rem;}
+    100%{margin-top:0; margin-left: 0;}
+    }
+
+    @keyframes imageAll-1{
+        0%{margin-top:0;margin-left: 0;}
+        25%{margin-left: 1rem;margin-top: 0;}
+        50%{margin-left: 1rem;margin-top: 1rem;}
+        75%{margin-left:0;margin-top: 1rem;}
+        100%{margin-top:0; margin-left: 0;}
+        }
+
+/* End Section-5 styling */
+
+/* Start Section-6 styling */
+
+.section-6{
+    margin-top: 14rem;
+
+    .header-6{
+        @include color();
+        margin: 1rem;
+        @media screen and (max-width:992px) {
+            font-size: 11px;
+        }
+        .para-6_1{
+            font-size: 13px;
+        }
+    }
+    .img-6{
+        img{
+            width: 99%;
+            transition: .2s ease all;
+            @media screen and (max-width:992px) {
+                width: 80%;
+                margin: 1rem;
+            }
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/* End Section-6 styling */
